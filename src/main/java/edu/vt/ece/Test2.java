@@ -19,7 +19,6 @@ public class Test2 {
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, InterruptedException {
         String lockClass = (args.length == 0 ? TREEPETERSON : args[0]);
         int threadCount = (args.length <= 1 ? 16 : Integer.parseInt(args[1]));
-//        System.out.println(threadCount);
         int totalIters = (args.length <= 2 ? 64000 : Integer.parseInt(args[2]));
         int iters = totalIters / threadCount;
 

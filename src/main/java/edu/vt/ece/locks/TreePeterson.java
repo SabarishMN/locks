@@ -51,7 +51,7 @@ public class TreePeterson implements Lock {
     }
 
     private int getThreadId() {
-        return (int) (Thread.currentThread().getId() % numThreads);  // Simplified for demonstration
+        return (int) (Thread.currentThread().getId() % numThreads);
     }
 
     public static void main(String[] args) {
